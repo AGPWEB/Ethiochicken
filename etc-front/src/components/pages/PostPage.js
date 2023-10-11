@@ -13,7 +13,7 @@ export default function PostPage() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://process.env.REACT_APP_URL/post/${id}`)
+    fetch(`${process.env.REACT_APP_URL}/post/${id}`)
       .then(response => {
         response.json().then(postInfo => {
           setPostInfo(postInfo);
@@ -22,7 +22,7 @@ export default function PostPage() {
   }, [id]);
 
   const deletePost = async (postId) => {
-    const res = await fetch(`http://process.env.REACT_APP_URL/post/${postId}`, {
+    const res = await fetch(`${process.env.REACT_APP_URL}/post/${postId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
