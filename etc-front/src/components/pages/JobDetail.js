@@ -9,7 +9,7 @@ export default function JobDetail() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://process.env.REACT_APP_URL/api/job-posts/${id}`)
+    fetch(`${process.env.REACT_APP_URL}/api/job-posts/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch job detail");
