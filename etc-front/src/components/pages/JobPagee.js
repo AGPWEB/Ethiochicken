@@ -60,7 +60,7 @@ function JobPagee() {
   };
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/job-posts')
+    fetch('http://process.env.REACT_APP_URL/api/job-posts')
       .then((response) => response.json())
       .then((data) => setJobPosts(data))
       .catch((error) => console.log(error));
@@ -71,7 +71,7 @@ function JobPagee() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:4000/api/job-posts/${id}`, { method: 'DELETE' })
+    fetch(`http://process.env.REACT_APP_URL/api/job-posts/${id}`, { method: 'DELETE' })
       .then(() => {
         const updatedJobPosts = jobPosts.filter((post) => post._id !== id);
         setJobPosts(updatedJobPosts);
