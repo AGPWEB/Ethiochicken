@@ -7,7 +7,7 @@ export default function NewsPage() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://process.env.REACT_APP_URL/newspost').then(response => {
+    fetch(`${process.env.REACT_APP_URL}/newspost`).then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
