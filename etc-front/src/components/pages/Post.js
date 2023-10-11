@@ -8,7 +8,7 @@ export default function Post({ _id, title, summary, cover, createdAt, author }) 
     <div className="posts">
       <div className="news-image">
         <Link to={`/post/${_id}`}>
-          <img className="imagess" src={"http://localhost:4000/" + cover} alt="" />
+          <img className="imagess" src={`${process.env.REACT_APP_URL}/` + cover} alt="" />
         </Link>
       </div>
       <div className="textss">
