@@ -7,7 +7,7 @@ export default function VacancyPage(){
     
     const [jobs, setJobs] = useState([]);
     useEffect(() => {
-       fetch('http://process.env.REACT_APP_URL/vacancy').then(response => {
+       fetch(`${process.env.REACT_APP_URL}/vacancy`).then(response => {
         response.json().then(jobs => {
             setJobs(jobs);
         });
