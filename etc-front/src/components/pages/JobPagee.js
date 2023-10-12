@@ -132,7 +132,7 @@ function JobPagee() {
             </table>
           </div>
         )}
-        <div style={{ marginTop: '100px' }}></div>
+     <div style={{ marginTop: '250px' }}></div>
       </div>
       <Footer />
     </>
