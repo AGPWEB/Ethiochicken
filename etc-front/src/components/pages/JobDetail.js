@@ -92,6 +92,7 @@ export default function JobDetail() {
           </Link>
         )}
       </div>
+          <Footer />
     </>
   );
 }
