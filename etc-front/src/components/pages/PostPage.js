@@ -68,7 +68,7 @@ export default function PostPage() {
           </div>
         )}
         <div className='newspage-image1'>
-          <img className='newspage-image2' src={`http://localhost:4000/${postInfo.cover}`} alt="" />
+          <img className='newspage-image2' src={`${process.env.REACT_APP_URL}/${postInfo.cover}`} alt="" />
         </div>
         <div className='newspage-content' dangerouslySetInnerHTML={{ __html: postInfo.content }} />
       </div>
