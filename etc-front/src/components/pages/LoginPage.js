@@ -65,7 +65,7 @@ export default function LoginPage() {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
-      
+      credentials:"include"
     });
     if (response.ok) {
       response.json().then(userInfo => {
@@ -78,7 +78,7 @@ export default function LoginPage() {
   }
 
   if (redirect) {
-    return <Navigate to={'/'} />;
+    return <Navigate to={'/create'} />;
   }
 
   return (
