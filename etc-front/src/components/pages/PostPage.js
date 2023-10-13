@@ -54,7 +54,7 @@ export default function PostPage() {
       </div>
       <div className='news-page-content'>
         <h1>{postInfo.title}</h1>
-        <time>{formatISO9075(new Date(postInfo.createdAt))}</time>
+
         <div className='post-page-author'>by @{postInfo.author.username}</div>
         {userInfo.id === postInfo.author._id && (
           <div className='news-top-space2'>
