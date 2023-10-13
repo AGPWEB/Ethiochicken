@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-
+import Footer from './Footer2';
 import { UserContext } from "../../UserContext";
 
 export default function JobDetail() {
