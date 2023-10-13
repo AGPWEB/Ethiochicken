@@ -110,15 +110,7 @@ export default function Post({_id, title, summary, cover, content, createdAt, au
             </h2>
           </Link>
           <p className="info">
-            <time
-              style={{
-                color: 'burgundy',
-                fontFamily: 'Poppins',
-                fontWeight: 'bolder',
-              }}
-            >
-              {format(new Date(createdAt), 'MMM d, yyyy HH:mm')}
-            </time>
+
           </p>
           <p
             className="summary"
