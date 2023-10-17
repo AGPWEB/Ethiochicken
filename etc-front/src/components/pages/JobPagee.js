@@ -81,6 +81,7 @@ function JobPagee() {
 
   return (
     <>
+    <div style={{marginTop:'100px'}}></div>
       <h1 style={{ textAlign: 'center', marginTop: '20px', marginBottom: '-40px' }}>Currently Available Positions</h1>
       <div style={styles.container}>
         {jobPosts.length === 0 ? (
@@ -132,8 +133,9 @@ function JobPagee() {
             </table>
           </div>
         )}
-     <div style={{ marginTop: '350px' }}></div>
+     <div style={{ marginTop: '530px' }}></div>
       </div>
+
       <Footer />
     </>
   );
