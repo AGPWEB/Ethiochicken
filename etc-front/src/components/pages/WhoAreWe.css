@@ -106,7 +106,17 @@ p{
     height: 100vh;
     padding: 10px;
   }
+  
+   
 }
 
-
+@media only screen and (max-width:290px) {
+  .who-main {
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: -120px;
+    height: 100vh;
+    padding: 10px;
+  }
+}
 
