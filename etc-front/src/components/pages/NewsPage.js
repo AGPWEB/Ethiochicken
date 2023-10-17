@@ -16,6 +16,7 @@ export default function NewsPage() {
 
   return (
     <>
+    <div style={{marginTop:'100px'}}></div>
       <div className="news-page">
         <h1>News Archive</h1>
       </div>
