@@ -54,7 +54,7 @@ function Teams() {
        </div>
        <div className='image8' data-text="">
            <img src={Sean} alt='dayoldchick' className='teams-images' />
-           <h3  style={{}}>Ms. Sean Moran</h3>
+           <h3  style={{}}>Mr. Sean Moran</h3>
            <p>Supply Chain and Logistics Director</p>
       </div>
       
