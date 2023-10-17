@@ -89,3 +89,27 @@
     font-size: 17px;
   }
 }
+
+@media only screen and (max-width: 290px) {
+  .container {
+    margin-left: -25px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paragraph1 h1 {
+    margin-left: -5px;
+    font-size: 17px;
+  }
+
+  .paragraph2 h1 {
+    margin-left: -5px;
+    font-size: 17px;
+  }
+
+  .paragraph3 h1 {
+    margin-left: -1px;
+    font-size: 17px;
+  }
+}
