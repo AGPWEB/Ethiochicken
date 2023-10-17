@@ -136,3 +136,10 @@
       margin-left: 5px;
   }
   }
+  @media only screen and (max-width:290px) {
+    .teams-images{
+      height: 150px;
+      width: 220px;
+      border-radius: 8px;
+    }
+  }
