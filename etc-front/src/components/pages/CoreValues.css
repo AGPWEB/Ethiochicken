@@ -187,3 +187,10 @@
 
 
   }
+  @media only screen and (max-width:290px) {
+    .core-images{
+      height: 150px;
+      width: 220px;
+      border-radius: 8px;
+    }
+  }
